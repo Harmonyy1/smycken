@@ -3,10 +3,14 @@
     margin: 0;
 }
 
+header {
+    background-color: beige;
+    padding-top: 5%;
+}
+
 .head {
     display: flex;
     flex-direction: row;
-    margin-top: 2%;
     margin-right: 5%;
 }
 
