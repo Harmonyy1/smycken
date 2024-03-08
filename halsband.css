@@ -21,11 +21,10 @@ header {
 }
 
 .name {
-    font-size: 15px;
+    font-size: 30px;
 }
 
 .head a {
-    margin-left: 5%;
     text-decoration: none;
     color: black
 }
@@ -34,6 +33,7 @@ header {
     display: flex;
     flex-direction: row;
     margin-left: 50%;
+    margin-top: 1%;
     
 }
 
@@ -45,3 +45,21 @@ header {
 
 
 
+.products img {
+    width: 30%;
+}
+
+.products div {
+    display: flex;
+    flex-direction: column;
+}
+
+.products input {
+    width: 75px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
