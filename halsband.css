@@ -48,9 +48,9 @@ header {
 
 
 
-.products input {
+.products button {
     width: 75px;
-    
+    margin-left: 40%;
 }
 
 .products img {
