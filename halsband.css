@@ -45,21 +45,28 @@ header {
 
 
 
-.products img {
-    width: 30%;
-}
 
-.products div {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .products input {
     width: 75px;
 }
 
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+.products img {
+    width: 500px;
+    height: 500px;
 }
+
+
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.row1 div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
