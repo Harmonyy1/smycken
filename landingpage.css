@@ -14,7 +14,5 @@ body{
 .Bilder{
     display: flex;
     flex-direction: row;
-    width: 30%;
-    margin-bottom: 50%;
 }
 
