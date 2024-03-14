@@ -51,6 +51,8 @@ header {
 }
 
 
+
+
 .row1 {
     display: flex;
     flex-direction: row;
@@ -68,9 +70,9 @@ header {
 .products img{
     width: 500px;
     height: 500px;
-    --border: 0.1rem solid black;
     transition: all 0.2s ease-in-out;
 }
+
 
 .products img:hover {
     background: black;
@@ -86,4 +88,16 @@ header {
 .row2 div {
     display: flex;
     flex-direction: column;
+}
+
+.product2 {
+    border: 0.1rem solid black;
+    justify-content: center;
+}
+
+.txt2 {
+    border: 0.1rem solid black;
+    width: fit-content;
+    margin-left: 42.5%;
+    bottom: 5%;
 }
