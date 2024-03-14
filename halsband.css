@@ -46,7 +46,7 @@ header {
 
 .main {
     width: 100%;
-    border: 0.1rem solid black;
+    --border: 0.1rem solid black;
     margin-top: 2.5%;
 }
 
@@ -68,7 +68,7 @@ header {
 .products img{
     width: 500px;
     height: 500px;
-    border: 0.1rem solid black;
+    --border: 0.1rem solid black;
     transition: all 0.2s ease-in-out;
 }
 
