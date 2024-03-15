@@ -93,11 +93,14 @@ header {
 .product2 {
     border: 0.1rem solid black;
     justify-content: center;
+    z-index: 1;
+    
 }
 
 .txt2 {
+    
     border: 0.1rem solid black;
-    width: fit-content;
-    margin-left: 42.5%;
-    bottom: 5%;
+    align-items: center;
+    z-index: 4;
+    top: 15%;
 }
