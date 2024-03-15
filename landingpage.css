@@ -49,10 +49,9 @@ header {
 .Bilder{
     display: flex;
     flex-direction: row;
-    background-color:gray ;
 }
 
 
-.halsband img{
-    background-color: gray;
+.body{
+    background-color: green;
 }
