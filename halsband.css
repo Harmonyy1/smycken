@@ -90,17 +90,10 @@ header {
     flex-direction: column;
 }
 
-.product2 {
-    border: 0.1rem solid black;
-    justify-content: center;
-    z-index: 1;
-    
-}
 
-.txt2 {
-    
+.products div div div div {         /* Bestämmer utseende på produktnamnen */
     border: 0.1rem solid black;
     align-items: center;
-    z-index: 4;
-    top: 15%;
+    font-family: "Madimi One", sans-serif;
 }
+
