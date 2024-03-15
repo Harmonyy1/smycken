@@ -68,16 +68,16 @@ header {
 }
 
 .products img{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     transition: all 0.2s ease-in-out;
 }
 
 
 .products img:hover {
     background: black;
-    width: 505px;
-    height: 505px;
+    width: 405px;
+    height: 405px;
 }
 
 .row1 div {
@@ -92,8 +92,17 @@ header {
 
 
 .products div div div div {         /* Bestämmer utseende på produktnamnen */
-    border: 0.1rem solid black;
+    --border: 0.1rem solid black;
     align-items: center;
     font-family: "Madimi One", sans-serif;
 }
 
+.button {
+    border-radius: 12px;
+    padding: 5% 5%;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: grey;
+}
