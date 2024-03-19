@@ -42,6 +42,10 @@ header {
     margin-right: 10%;
 }
 
+.icon-cart svg {
+    width: 30px;
+}
+
 
 
 body {
