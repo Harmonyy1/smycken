@@ -8,7 +8,7 @@
     $db = "smycken";
     $conn = mysqli_connect($server, $user, $pass, $db);
 
-    $sql = "SELECT * FROM produkter WHERE Typ='Armband' ORDER BY id ASC";
+    $sql = "SELECT * FROM produkter WHERE Typ='Örhänge' ORDER BY id ASC";
 
     $produktlista = mysqli_query($conn, $sql);
 

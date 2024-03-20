@@ -76,7 +76,25 @@
                         <img src="<?=$rad['image']?>" alt="">
                         <div class="txt1"><?=$rad['name']?></div>
                     </div>
-                    <button class="button" onclick="">Köp</button>
+
+                    <?php
+                        if(isset($_POST['btn-atc'])){
+                            echo 'Hello everybody... you just clicked on this button';
+                            //global $mysqli;
+                            //$mysqli -> insert(
+                                //$mysqli -> prefix.'shoppingcart',
+                                //[
+                                    //'title'     => 'This is our first product title'
+                                //]
+                            //);
+                        }
+                    ?>
+
+                    <form method="post">
+                        <input type ="submit" name="btn-atc" value="Lägg i kundvagnen">
+                    </form>
+
+
                 </div>
 
                 <?php
