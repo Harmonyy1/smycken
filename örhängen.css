@@ -54,17 +54,11 @@ header {
 
 
 .row1 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,1fr);
     justify-content: space-evenly;
     margin-bottom: 2.5%;
-}
-
-.row2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 2.5%;
 }
 
 .products img{
