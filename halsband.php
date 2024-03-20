@@ -87,6 +87,13 @@
                                     //'title'     => 'This is our first product title'
                                 //]
                             //);
+
+
+
+                                    // sök upp en guide på hur man tar buttonclicks till databasen 
+                                    // nu borde det funka men måste fixa lite till bara
+
+
                         }
                     ?>
 
