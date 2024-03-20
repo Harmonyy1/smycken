@@ -40,15 +40,15 @@
 
             <div class="headermenu">
                 <div class="halsband">
-                    <a href="./halsband.html">HALSBAND</a>
+                    <a href="./halsband.php">HALSBAND</a>
                 </div>
 
                 <div class="armband">
-                    <a href="./armband.html">ARMBAND</a>
+                    <a href="./armband.php">ARMBAND</a>
                 </div>
 
                 <div class="örhängen">
-                    <a href="./örhängen.html">ÖRHÄNGEN</a>
+                    <a href="./örhängen.php">ÖRHÄNGEN</a>
                 </div>
 
                 <div class="icon-cart">
