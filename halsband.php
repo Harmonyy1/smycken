@@ -88,13 +88,13 @@
                         $conn = new mysqli($server, $user, $pass, $db);
 
 
+                        
 
                         $sql_query = "INSERT INTO shoppingcart (name, price, image) SELECT name, price, image  FROM produkter";
   
 
 
 
-                        //$sql = "INSERT INTO shoppingcart (name, price, image) VALUES ('John', '12', 'maja')";
 
                         if ($conn->query($sql_query) === TRUE) {
                             $id = $conn->insert_id;
