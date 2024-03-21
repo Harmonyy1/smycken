@@ -98,7 +98,7 @@
 
                         if ($conn->query($sql_query) === TRUE) {
                             $id = $conn->insert_id;
-                            echo "New record created successfully";
+                            //echo "New record created successfully";
                         }   else {
                             echo "Error: " . $sql_query . "<br>" . $conn -> error;
                         }
