@@ -78,17 +78,27 @@
                     </div>
 
                     <?php
-                        if(isset($_POST['btn-atc'])){
-                            //echo 'Hello everybody... you just clicked on this button';
-
-                            
-
-                                    // kolla denna länk och försök igen: https://www.w3schools.com/php/php_mysql_insert.asp
-                                    // sök upp en guide på hur man tar buttonclicks till databasen 
-                                    // nu borde det funka men måste fixa lite till bara
 
 
+
+                        $server = "localhost";
+                        $user = "root";
+                        $pass = "";
+                        $db = "smycken";
+                        $conn = mysqli_connect($server, $user, $pass, $db);
+
+
+
+                        $sql = "INSERT INTO shoppingcart (title, price, thumbnail) VALUES ('John', 'Doe', 'maja')";
+
+                        if ($conn->query($sql) === TRUE) {
+                            $id = $conn->insert_id;
+                            echo "New record created successfully";
+                        }   else {
+                            echo "Error: " . $sql . "<br>" . $conn -> error;
                         }
+
+                        $conn -> close();
                     ?>
 
                     <form method="post">
