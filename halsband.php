@@ -79,17 +79,11 @@
 
                     <?php
                         if(isset($_POST['btn-atc'])){
-                            echo 'Hello everybody... you just clicked on this button';
-                            //global $mysqli;
-                            //$mysqli -> insert(
-                                //$mysqli -> prefix.'shoppingcart',
-                                //[
-                                    //'title'     => 'This is our first product title'
-                                //]
-                            //);
+                            //echo 'Hello everybody... you just clicked on this button';
 
+                            
 
-
+                                    // kolla denna länk och försök igen: https://www.w3schools.com/php/php_mysql_insert.asp
                                     // sök upp en guide på hur man tar buttonclicks till databasen 
                                     // nu borde det funka men måste fixa lite till bara
 
