@@ -85,17 +85,22 @@
                         $user = "root";
                         $pass = "";
                         $db = "smycken";
-                        $conn = mysqli_connect($server, $user, $pass, $db);
+                        $conn = new mysqli($server, $user, $pass, $db);
 
 
 
-                        $sql = "INSERT INTO shoppingcart (title, price, thumbnail) VALUES ('John', 'Doe', 'maja')";
+                        $sql_query = "INSERT INTO shoppingcart (name, price, image) SELECT name, price, image  FROM produkter";
+  
 
-                        if ($conn->query($sql) === TRUE) {
+
+
+                        //$sql = "INSERT INTO shoppingcart (name, price, image) VALUES ('John', '12', 'maja')";
+
+                        if ($conn->query($sql_query) === TRUE) {
                             $id = $conn->insert_id;
                             echo "New record created successfully";
                         }   else {
-                            echo "Error: " . $sql . "<br>" . $conn -> error;
+                            echo "Error: " . $sql_query . "<br>" . $conn -> error;
                         }
 
                         $conn -> close();
