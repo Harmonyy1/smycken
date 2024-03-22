@@ -117,7 +117,7 @@
                     ?>
 
                     <form method="post">
-                        <input class="btn-prod" type ="submit" name="btn-atc<?=$prod_id?>" value="Lägg i kundvagnen">
+                        <input class="btn-prod" type ="submit" name="btn-atc<?=$prod_id?>" value="Lägg i kundvagnen <?=$rad['price']?> kr">
                     </form>
 
 
