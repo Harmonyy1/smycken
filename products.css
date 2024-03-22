@@ -76,6 +76,7 @@ body {
     width: 400px;
     height: 400px;
     transition: all 0.2s ease-in-out;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -90,10 +91,8 @@ body {
     flex-direction: column;
 }
 
-.row2 div {
-    display: flex;
-    flex-direction: column;
-}
+
+
 
 
 .products div div div div {         /* Bestämmer utseende på produktnamnen */
@@ -102,12 +101,15 @@ body {
     font-family: "Madimi One", sans-serif;
 }
 
-.button {
+.btn-prod {
     border-radius: 12px;
     padding: 5% 5%;
     transition: all 0.2s ease-in-out;
+    width: 100%;
+    background-color: #E6E6FA;
+    margin-bottom: 10%;
 }
 
-.button:hover {
-    background-color: grey;
+.btn-prod:hover {
+    background-color: #ccccfa;
 }
