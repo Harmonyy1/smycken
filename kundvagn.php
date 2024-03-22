@@ -104,11 +104,19 @@
                         $conn = new mysqli($server, $user, $pass, $db);
 
 
-                        $prod_id = $_GET['prod_id'];
+                        $prod_id = $rad['prod_id'];
 
-                        $sql_query = "DELETE FROM shoppingcart WHERE prod_id=$prod_id";
+                        if ($conn -> connect_error) {
+                            die("Connection failed: " . $conn -> connect_error);
+                        }
 
+                        $sql_query = "DELETE FROM shoppingcart WHERE prod_id = $prod_id";
 
+                        if ($conn -> query($sql_query) === TRUE) {
+                            echo "Record with ID $prod_id deleted successfully";
+                        } else {
+                            echo "Error deleting record: " . $conn -> error;
+                        }
 
                         $conn -> close();
                     }
