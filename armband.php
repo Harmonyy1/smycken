@@ -8,7 +8,7 @@
     $db = "smycken";
     $conn = mysqli_connect($server, $user, $pass, $db);
 
-    $sql = "SELECT * FROM produkter WHERE Typ='Armband' ORDER BY id ASC";
+    $sql = "SELECT * FROM produkter WHERE Typ='Armband' ORDER BY prod_id ASC";
 
     $produktlista = mysqli_query($conn, $sql);
 
@@ -78,12 +78,12 @@
                     </div>
 
                     <?php
-                        $id = $rad['id'];
+                        $prod_id = $rad['prod_id'];
                         $name = $rad['name'];
                         $price = $rad['price'];
                         $image = $rad['image'];
 
-                        if(isset($_POST['btn-atc'.$id])){
+                        if(isset($_POST['btn-atc'.$prod_id])){
 
                             $server = "localhost";
                             $user = "root";
@@ -94,7 +94,7 @@
 
                             
 
-                            $sql_query = "INSERT INTO shoppingcart (id, name, price, image) VALUES ('$id','$name', '$price', '$image')";
+                            $sql_query = "INSERT INTO shoppingcart (prod_id, name, price, image) VALUES ('$prod_id','$name', '$price', '$image')";
     
 
 
@@ -112,7 +112,7 @@
                     ?>
 
                     <form method="post">
-                        <input type ="submit" name="btn-atc<?=$id?>" value="Lägg i kundvagnen">
+                        <input type ="submit" name="btn-atc<?=$prod_id?>" value="Lägg i kundvagnen">
                     </form>
 
 
