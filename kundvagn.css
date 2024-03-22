@@ -93,3 +93,16 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.btn-product {
+    border-radius: 12px;
+    padding: 5% 5%;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    background-color: #E6E6FA;
+    margin-bottom: 10%;
+}
+
+.btn-product:hover {
+    background-color: #ccccfa;
+}

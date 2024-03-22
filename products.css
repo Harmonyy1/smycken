@@ -101,6 +101,10 @@ body {
     font-family: "Madimi One", sans-serif;
 }
 
+.txt1 {
+    margin-top: 2.5%;
+}
+
 .btn-prod {
     border-radius: 12px;
     padding: 5% 5%;
