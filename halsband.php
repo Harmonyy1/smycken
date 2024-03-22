@@ -78,36 +78,41 @@
                     </div>
 
                     <?php
+                        $id = $rad['id'];
+                        $name = $rad['name'];
+                        $price = $rad['price'];
+                        $image = $rad['image'];
+
+                        if(isset($_POST['btn-atc'.$id])){
+
+                            $server = "localhost";
+                            $user = "root";
+                            $pass = "";
+                            $db = "smycken";
+                            $conn = new mysqli($server, $user, $pass, $db);
+
+
+                            
+
+                            $sql_query = "INSERT INTO shoppingcart (id, name, price, image) VALUES ('$id','$name', '$price', '$image')";
+    
 
 
 
-                        $server = "localhost";
-                        $user = "root";
-                        $pass = "";
-                        $db = "smycken";
-                        $conn = new mysqli($server, $user, $pass, $db);
 
+                            if ($conn->query($sql_query) === TRUE) {
+                                $id = $conn->insert_id;
+                                //echo "New record created successfully";
+                            }   else {
+                                echo "Error: " . $sql_query . "<br>" . $conn -> error;
+                            }
 
-                        
-
-                        $sql_query = "INSERT INTO shoppingcart (name, price, image) SELECT name, price, image  FROM produkter";
-  
-
-
-
-
-                        if ($conn->query($sql_query) === TRUE) {
-                            $id = $conn->insert_id;
-                            //echo "New record created successfully";
-                        }   else {
-                            echo "Error: " . $sql_query . "<br>" . $conn -> error;
+                            $conn -> close();
                         }
-
-                        $conn -> close();
                     ?>
 
                     <form method="post">
-                        <input type ="submit" name="btn-atc" value="Lägg i kundvagnen">
+                        <input type ="submit" name="btn-atc<?=$id?>" value="Lägg i kundvagnen">
                     </form>
 
 
