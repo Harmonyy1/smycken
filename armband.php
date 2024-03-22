@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="halsband.css"> 
+    <link rel="stylesheet" href="products.css"> 
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,7 +76,46 @@
                         <img src="<?=$rad['image']?>" alt="">
                         <div class="txt1"><?=$rad['name']?></div>
                     </div>
-                    <button class="button" onclick="">Köp</button>
+
+                    <?php
+                        $id = $rad['id'];
+                        $name = $rad['name'];
+                        $price = $rad['price'];
+                        $image = $rad['image'];
+
+                        if(isset($_POST['btn-atc'.$id])){
+
+                            $server = "localhost";
+                            $user = "root";
+                            $pass = "";
+                            $db = "smycken";
+                            $conn = new mysqli($server, $user, $pass, $db);
+
+
+                            
+
+                            $sql_query = "INSERT INTO shoppingcart (id, name, price, image) VALUES ('$id','$name', '$price', '$image')";
+    
+
+
+
+
+                            if ($conn->query($sql_query) === TRUE) {
+                                $id = $conn->insert_id;
+                                //echo "New record created successfully";
+                            }   else {
+                                echo "Error: " . $sql_query . "<br>" . $conn -> error;
+                            }
+
+                            $conn -> close();
+                        }
+                    ?>
+
+                    <form method="post">
+                        <input type ="submit" name="btn-atc<?=$id?>" value="Lägg i kundvagnen">
+                    </form>
+
+
                 </div>
 
                 <?php
