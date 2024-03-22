@@ -12,13 +12,13 @@ header {
     background-color: beige;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 .head {
     display: flex;
     flex-direction: row;
     margin-left: 2%;
-
     font-family: "Madimi One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -38,7 +38,6 @@ header {
     flex-direction: row;
     margin-left: 50%;
     margin-top: 1%;
-    
 }
 
 .headermenu div {
@@ -56,7 +55,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 50px;
-
 }
 
 .slogan{
