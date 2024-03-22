@@ -5,7 +5,7 @@
 }
 
 header {
-    background-color: beige;
+    background-color: #ccccfa;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
 }
@@ -42,6 +42,15 @@ header {
     margin-right: 10%;
 }
 
+.icon-cart svg {
+    width: 30px;
+}
+
+
+
+body {
+    background-color: #E6E6FA;
+}
 
 
 .main {
@@ -54,23 +63,21 @@ header {
 
 
 .row1 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,1fr);
     justify-content: space-evenly;
     margin-bottom: 2.5%;
 }
 
-.row2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 2.5%;
-}
+
 
 .products img{
     width: 400px;
     height: 400px;
     transition: all 0.2s ease-in-out;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border: 15px solid rgb(250, 250, 236);
 }
 
 
@@ -85,10 +92,8 @@ header {
     flex-direction: column;
 }
 
-.row2 div {
-    display: flex;
-    flex-direction: column;
-}
+
+
 
 
 .products div div div div {         /* Bestämmer utseende på produktnamnen */
@@ -97,12 +102,19 @@ header {
     font-family: "Madimi One", sans-serif;
 }
 
-.button {
+.txt1 {
+    margin-top: 2.5%;
+}
+
+.btn-prod {
     border-radius: 12px;
     padding: 5% 5%;
     transition: all 0.2s ease-in-out;
+    width: 100%;
+    background-color: #E6E6FA;
+    margin-bottom: 10%;
 }
 
-.button:hover {
-    background-color: grey;
+.btn-prod:hover {
+    background-color: #ccccfa;
 }

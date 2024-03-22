@@ -4,17 +4,21 @@
     max-width: 100%;
 }
 
+body {
+    background-color: #E6E6FA;
+}
+
 header {
-    background-color: beige;
+    background-color: #ccccfa;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
+    filter: drop-shadow(0px 15px 5px);
 }
 
 .head {
     display: flex;
     flex-direction: row;
     margin-left: 2%;
-
     font-family: "Madimi One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -26,7 +30,8 @@ header {
 
 .head a {
     text-decoration: none;
-    color: black
+    color: black;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 .headermenu {
@@ -34,22 +39,47 @@ header {
     flex-direction: row;
     margin-left: 50%;
     margin-top: 1%;
-    
 }
 
 .headermenu div {
     margin-left: 10%;
     margin-right: 10%;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 
 
-.bg{
-    background-image: url("helsk.jpg");
-    height: 100%;
+.bg {
+    background-image: url("smycken4.jpg");
+    height: 100vh;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 50px;
+}
+
+.slogan{
+    color:white;
+    font-size: 30px;
+    
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+
+}
+
+
+.shader {
+    background-color:rgba(51, 50, 50, 0.67);
+    width: 100%;
+    height: 100vh;
 }
 
 .main {
@@ -57,13 +87,69 @@ header {
     flex-direction: column;
 }
 
-.Bilder{
+.Bilder {
     display: flex;
     flex-direction: row;
+    position: relative; 
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.body{
-    background-color: antiquewhite;
+.Bilder img {
+    border: 0.1rem solid gray;
+    margin: 20px;
+    width:400px;
+    height: 400px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 1s ease-in-out;
+    margin-bottom: 50px;
+    border: 15px solid rgb(250, 250, 236);
+}
+
+.Bilder img:hover {
+    transform: scale(1.05);
 }
 
 
+.image-text {
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0); 
+    font-size: 40px; 
+    font-family:"Madimi One", sans-serif;
+    font-weight: bold;
+    opacity: 0; 
+    transition: opacity 2s ease-in-out; 
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Halsband .image-text {
+    top: 50%;
+    left: 17%;
+}
+
+.Örhängen .image-text {
+    top: 50%;
+    left: 50%; 
+}
+
+.Armband .image-text {
+    top: 50%;
+    left: 83%;
+}
+
+.Halsband:hover .image-text {
+    opacity: 1;
+}
+
+.Örhängen:hover .image-text {
+    opacity: 1;
+}
+
+.Armband:hover .image-text {
+    opacity: 1;
+}
