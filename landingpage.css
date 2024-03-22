@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #E6E6FA;
+    background-color:rgb(240, 240, 223);
 }
 
 header {
@@ -55,11 +55,12 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 50px;
 
 }
 
 .slogan{
-    color: white;
+    color:white;
     font-size: 30px;
     
     font-family: "Sniglet", system-ui;
@@ -101,7 +102,56 @@ header {
     margin: 20px;
     width:400px;
     height: 400px;
-
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 1s ease-in-out;
+    margin-bottom: 50px;
 }
 
+.Bilder img:hover {
+    transform: scale(1.05);
+}
 
+.Bilder {
+    position: relative; 
+}
+
+.image-text {
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0); 
+    font-size: 40px; 
+    font-family:"Madimi One", sans-serif;
+    font-weight: bold;
+    opacity: 0; 
+    transition: opacity 2s ease-in-out; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Halsband .image-text {
+    top: 50%;
+    left: 17%;
+}
+
+.Örhängen .image-text {
+    top: 50%;
+    left: 50%; 
+}
+
+.Armband .image-text {
+    top: 50%;
+    left: 83%;
+}
+
+.Halsband:hover .image-text {
+    opacity: 1;
+}
+
+.Örhängen:hover .image-text {
+    opacity: 1;
+}
+
+.Armband:hover .image-text {
+    opacity: 1;
+}
